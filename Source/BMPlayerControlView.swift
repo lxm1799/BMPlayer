@@ -496,7 +496,7 @@ open class BMPlayerControlView: UIView {
         
     }
     
-    func setupUIComponents() {
+    open func setupUIComponents() {
         // Subtile view
         subtitleLabel.numberOfLines = 0
         subtitleLabel.textAlignment = .center
@@ -623,7 +623,7 @@ open class BMPlayerControlView: UIView {
         }
     }
     
-    func addSnapKitConstraint() {
+    open func addSnapKitConstraint() {
         // Main mask view
         mainMaskView.snp.makeConstraints { [unowned self](make) in
             make.edges.equalTo(self)
